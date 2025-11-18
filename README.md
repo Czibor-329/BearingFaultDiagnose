@@ -1,2 +1,2 @@
-# train_bearing_fault_dignose
-25年华为杯数学竞赛E题前三问代码
+# rail_bearing
+25E

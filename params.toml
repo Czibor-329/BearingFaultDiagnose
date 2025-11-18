@@ -1,0 +1,24 @@
+[data_parameter]
+SRC_CSV = "Xs.csv"
+TGT_CSV = "Xt.csv"
+LABEL_COL = 1
+CLASS_NAMES = ["-1", "B", "IR", "OR"]
+BATCH_SIZE = 64
+
+[dan_parameter]
+HID_DIMS = [128, 64]
+MMD_LAYERS = [0, 1]
+MMD_WEIGHT = 1.2
+EPOCHS = 150
+WARMUP = 15
+NUM_SCALES = 5
+REPEAT_TGT_MATCH = 1
+LEARNING_RATE = 1e-3
+GRAD_CLIP = 5.0
+
+[MLP]
+EPOCHS_BASE = 30
+LEARNING_RATE = 1e-3
+DEVICE = "cpu"
+HIDDEN_DIM = [128, 64]
+WEIGHT_DECAY = 1e-4
